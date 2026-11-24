@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Migo · Siempre con vos</title>
+  <meta name="description" content="Migo es el bálsamo labial recargable que siempre va con vos. Se cambia en un clic, es lindo de usar y no deja basura.">
+  <meta name="theme-color" content="#402976">
+  <meta property="og:title" content="Migo · Siempre con vos">
+  <meta property="og:description" content="El bálsamo recargable que se cambia en un clic.">
+  <meta property="og:type" content="website">
+
+  <!-- Tipografía sans serif: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Migo, ir al inicio">
+        <img src="assets/logo-violeta.png" alt="Migo" height="34">
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#migo">Migo</a>
+        <a href="#mision">Misión</a>
+        <a href="#vision">Visión</a>
+        <a href="#valores">Valores</a>
+        <a href="#videos">Videos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PORTADA -->
+    <section class="hero">
+      <span class="shape s1" aria-hidden="true"></span>
+      <span class="shape s2" aria-hidden="true"></span>
+      <span class="shape s3" aria-hidden="true"></span>
+      <div class="container hero-inner">
+        <img class="hero-logo" src="assets/logo-blanco.png" alt="Migo">
+        <p class="hero-tag">Siempre con vos</p>
+        <h1>El bálsamo que siempre va con vos.</h1>
+        <p class="hero-sub">Recargable, lindo de usar y sin dejar basura. Se cambia en un clic.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#videos">Ver videos</a>
+          <a class="btn btn-ghost" href="#migo">Conocé Migo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CINTA EN MOVIMIENTO -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Siempre con vos ✦ Recargable ✦ Se cambia en un clic ✦ Sin dejar basura ✦ </span>
+        <span>Siempre con vos ✦ Recargable ✦ Se cambia en un clic ✦ Sin dejar basura ✦ </span>
+        <span>Siempre con vos ✦ Recargable ✦ Se cambia en un clic ✦ Sin dejar basura ✦ </span>
+        <span>Siempre con vos ✦ Recargable ✦ Se cambia en un clic ✦ Sin dejar basura ✦ </span>
+      </div>
+    </div>
+
+    <!-- QUÉ ES MIGO -->
+    <section class="section" id="migo">
+      <div class="container narrow reveal">
+        <p class="eyebrow">Qué es Migo</p>
+        <h2>Una compañera de bolsillo.</h2>
+        <p class="lead">El nombre juega con “conmigo” y con “amigo”: un bálsamo que ya está en la mochila o la cartera cuando lo necesitás.</p>
+        <p>Un bálsamo se usa varias veces por día: en el colectivo, entre clases o antes de una reunión. Migo convierte ese gesto chiquito en un ritual propio y recargable.</p>
+      </div>
+    </section>
+
+    <!-- MISIÓN / VISIÓN / VALORES -->
+    <section class="section section-soft">
+      <div class="container cards">
+
+        <article class="card card-mision reveal" id="mision">
+          <span class="card-num">01</span>
+          <h3>Misión</h3>
+          <p>Acompañar a las mujeres en sus gestos de cuidado de todos los días, con un bálsamo recargable que se cambia en un clic: fácil de llevar, lindo de usar y sin dejar basura.</p>
+        </article>
+
+        <article class="card card-vision reveal" id="vision">
+          <span class="card-num">02</span>
+          <h3>Visión</h3>
+          <p>Que cuidarse sea tan simple y cotidiano como llevar a una amiga en el bolsillo, y que el cuidado personal y el cuidado del planeta dejen de ser cosas separadas.</p>
+        </article>
+
+        <article class="card card-valores reveal" id="valores">
+          <span class="card-num">03</span>
+          <h3>Valores</h3>
+          <ol class="values">
+            <li>Cercanía</li>
+            <li>Simpleza</li>
+            <li>Ritual cotidiano</li>
+            <li>Alegría con identidad</li>
+          </ol>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- VIDEOS -->
+    <section class="section" id="videos">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">Mirá Migo en acción</p>
+          <h2>Cuatro formas de verla.</h2>
+        </div>
+        <!-- Las tarjetas se generan desde script.js (lista VIDEOS) -->
+        <div class="video-grid" id="videoGrid"></div>
+        <noscript><p>Activá JavaScript para ver los videos.</p></noscript>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/logo-blanco.png" alt="Migo" height="40">
+      <p>Siempre con vos.</p>
+      <!-- Cambiá el # por el link de tu Instagram -->
+      <a class="btn btn-light" href="#" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
